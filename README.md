@@ -1,20 +1,30 @@
 # MyBudget
 
 ## Deployed
-* [Deployed App]()
-* [Repository]()
+* [Deployed App](https://offline-budget-tracking.herokuapp.com/)
+* [Repository](https://github.com/celineross/My-Budget)
 
 ## Author
 <p>Celine Ross</p>
 
 ## Description
-<p></p>
+<p>This app allows a user to store budget data online or offline in a browser, and output that data into a table and a graph for optimal viewing.</p>
 
-<img src="" alt="" style="width:50%; height:50%">
+<p>Here you can see the Add/Subtract Funds functionality.</p>
+<img src="./screenshots/add.gif" alt="Add Funds Test" style="width:25%; height:25%">
+<img src="./screenshots/subtract.gif" alt="Subtract Funds Test" style="width:25%; height:25%">
+
 <br>
-<img src="" alt="" style="width:50%; height:50%">
 <br>
-<img src="" alt="" style="width:50%; height:50%">
+
+<p>When the network is offline, you can see in the console that the data entered is still logged locally.</p>
+<img src="./screenshots/indexedDB.png" alt="Data is stored in the indexedDB while network is offline" style="width:50%; height:50%">
+
+<br>
+<br>
+
+<p>When the network goes back online, the offline data store is fetched by the remote database and added to the rest of the data.</p>
+<img src="./screenshots/fetch.png" alt="Fetching data from offline store" style="width:50%; height:50%">
 
 ## Requirements
 <p>Express, Mongoose, MongoDB, Morgan, Compression, Node.</p>
